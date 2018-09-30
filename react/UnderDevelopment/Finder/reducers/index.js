@@ -4,10 +4,10 @@
 
 import { combineReducers } from 'redux';
 
-import amount from './amount';
+import finder from './finder';
 import error from './error';
 
 export default combineReducers({
-    amount: amount,
+    finder: finder,
     error: error
 })

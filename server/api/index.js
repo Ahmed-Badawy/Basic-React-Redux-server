@@ -1,7 +1,12 @@
 import express from "express";
 import Helpers from "../Helpers";
+import {data as articlesData} from "jsonData/react-blog-mockup-data.json"
 
 const router = express.Router();
+
+router.get("/articlesApi", function(req,res){
+	res.send(articlesData);
+});
 
 router.get('/main/:id?', function(req, res, next) {
 	setTimeout(function(){
@@ -14,6 +19,7 @@ router.get('/main/:id?', function(req, res, next) {
 		res.json({response_obj})
 	}, Helpers.getRandomResponseTime())
 });
+
 
 
 

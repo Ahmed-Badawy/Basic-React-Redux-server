@@ -1,0 +1,441 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleList ArticleList Renders Correctly 1`] = `
+<div>
+  <div
+    style={
+      Object {
+        "color": "#444",
+        "margin": "14px",
+        "padding": "8px",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "border": "2px gray solid",
+          "borderRadius": "10px",
+          "color": "#333",
+          "fontSize": "1.5em",
+          "paddingLeft": "8px",
+        }
+      }
+    >
+      a
+    </div>
+    <div>
+      Invalid Date
+    </div>
+    <div>
+      <a>
+         
+      </a>
+    </div>
+    <div />
+  </div>
+  <div
+    style={
+      Object {
+        "color": "#444",
+        "margin": "14px",
+        "padding": "8px",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "border": "2px gray solid",
+          "borderRadius": "10px",
+          "color": "#333",
+          "fontSize": "1.5em",
+          "paddingLeft": "8px",
+        }
+      }
+    >
+      b
+    </div>
+    <div>
+      Invalid Date
+    </div>
+    <div>
+      <a>
+         
+      </a>
+    </div>
+    <div />
+  </div>
+</div>
+`;
+
+exports[`ArticleList Shallow Testing ArticleList Renders Correctly with Shallow Snapshots 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ArticleList
+    articles={
+      Object {
+        "a": Object {
+          "id": "a",
+          "title": "a",
+        },
+        "b": Object {
+          "id": "b",
+          "title": "b",
+        },
+      }
+    }
+    store={
+      Object {
+        "lookupAuthors": [MockFunction] {
+          "calls": Array [
+            Array [
+              undefined,
+            ],
+            Array [
+              undefined,
+            ],
+          ],
+          "results": Array [
+            Object {
+              "isThrow": false,
+              "value": Object {},
+            },
+            Object {
+              "isThrow": false,
+              "value": Object {},
+            },
+          ],
+        },
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Article
+          article={
+            Object {
+              "id": "a",
+              "title": "a",
+            }
+          }
+          store={
+            Object {
+              "lookupAuthors": [MockFunction] {
+                "calls": Array [
+                  Array [
+                    undefined,
+                  ],
+                  Array [
+                    undefined,
+                  ],
+                ],
+                "results": Array [
+                  Object {
+                    "isThrow": false,
+                    "value": Object {},
+                  },
+                  Object {
+                    "isThrow": false,
+                    "value": Object {},
+                  },
+                ],
+              },
+            }
+          }
+        />,
+        <Article
+          article={
+            Object {
+              "id": "b",
+              "title": "b",
+            }
+          }
+          store={
+            Object {
+              "lookupAuthors": [MockFunction] {
+                "calls": Array [
+                  Array [
+                    undefined,
+                  ],
+                  Array [
+                    undefined,
+                  ],
+                ],
+                "results": Array [
+                  Object {
+                    "isThrow": false,
+                    "value": Object {},
+                  },
+                  Object {
+                    "isThrow": false,
+                    "value": Object {},
+                  },
+                ],
+              },
+            }
+          }
+        />,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "a",
+        "nodeType": "class",
+        "props": Object {
+          "article": Object {
+            "id": "a",
+            "title": "a",
+          },
+          "store": Object {
+            "lookupAuthors": [MockFunction] {
+              "calls": Array [
+                Array [
+                  undefined,
+                ],
+                Array [
+                  undefined,
+                ],
+              ],
+              "results": Array [
+                Object {
+                  "isThrow": false,
+                  "value": Object {},
+                },
+                Object {
+                  "isThrow": false,
+                  "value": Object {},
+                },
+              ],
+            },
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "b",
+        "nodeType": "class",
+        "props": Object {
+          "article": Object {
+            "id": "b",
+            "title": "b",
+          },
+          "store": Object {
+            "lookupAuthors": [MockFunction] {
+              "calls": Array [
+                Array [
+                  undefined,
+                ],
+                Array [
+                  undefined,
+                ],
+              ],
+              "results": Array [
+                Object {
+                  "isThrow": false,
+                  "value": Object {},
+                },
+                Object {
+                  "isThrow": false,
+                  "value": Object {},
+                },
+              ],
+            },
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Article
+            article={
+              Object {
+                "id": "a",
+                "title": "a",
+              }
+            }
+            store={
+              Object {
+                "lookupAuthors": [MockFunction] {
+                  "calls": Array [
+                    Array [
+                      undefined,
+                    ],
+                    Array [
+                      undefined,
+                    ],
+                  ],
+                  "results": Array [
+                    Object {
+                      "isThrow": false,
+                      "value": Object {},
+                    },
+                    Object {
+                      "isThrow": false,
+                      "value": Object {},
+                    },
+                  ],
+                },
+              }
+            }
+          />,
+          <Article
+            article={
+              Object {
+                "id": "b",
+                "title": "b",
+              }
+            }
+            store={
+              Object {
+                "lookupAuthors": [MockFunction] {
+                  "calls": Array [
+                    Array [
+                      undefined,
+                    ],
+                    Array [
+                      undefined,
+                    ],
+                  ],
+                  "results": Array [
+                    Object {
+                      "isThrow": false,
+                      "value": Object {},
+                    },
+                    Object {
+                      "isThrow": false,
+                      "value": Object {},
+                    },
+                  ],
+                },
+              }
+            }
+          />,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "a",
+          "nodeType": "class",
+          "props": Object {
+            "article": Object {
+              "id": "a",
+              "title": "a",
+            },
+            "store": Object {
+              "lookupAuthors": [MockFunction] {
+                "calls": Array [
+                  Array [
+                    undefined,
+                  ],
+                  Array [
+                    undefined,
+                  ],
+                ],
+                "results": Array [
+                  Object {
+                    "isThrow": false,
+                    "value": Object {},
+                  },
+                  Object {
+                    "isThrow": false,
+                    "value": Object {},
+                  },
+                ],
+              },
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "b",
+          "nodeType": "class",
+          "props": Object {
+            "article": Object {
+              "id": "b",
+              "title": "b",
+            },
+            "store": Object {
+              "lookupAuthors": [MockFunction] {
+                "calls": Array [
+                  Array [
+                    undefined,
+                  ],
+                  Array [
+                    undefined,
+                  ],
+                ],
+                "results": Array [
+                  Object {
+                    "isThrow": false,
+                    "value": Object {},
+                  },
+                  Object {
+                    "isThrow": false,
+                    "value": Object {},
+                  },
+                ],
+              },
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;

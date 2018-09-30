@@ -2,14 +2,18 @@ import express from "express";
 import path from "path";
 import logger from "morgan";
 import http from "http";
+
+// import cors from "cors"; //cros: allow cross origin request permissions
+
 import routes from "./routes/index";
 import api from "./api/index";
-
 
 // change this to something else if port 3000 is in use
 var port = 3000;
 
 var app = express();
+
+// app.use(cors());//cros: allow cross origin request permissions
 
 
 // view engine setup
@@ -42,7 +46,7 @@ app.use(function(err, req, res, next) {
 
 
 var server = http.createServer(app);
-server.listen(3000);
+server.listen(port);
 server.on('listening', function() { console.log('listening on port ' + port); })
 server.on('error', function(error) {
   switch (error.code) {
