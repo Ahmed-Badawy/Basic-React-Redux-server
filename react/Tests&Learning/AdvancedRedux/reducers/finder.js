@@ -16,5 +16,4 @@ function finder(state = defaultState, action) {
     }
 }
 
-import {fromJS} from "immutable";
-export default fromJS(finder);
+export default finder;

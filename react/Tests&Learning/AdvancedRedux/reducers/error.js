@@ -10,5 +10,5 @@ function error(state = defaultState, action) {
     }
 }
 
-import {fromJS} from "immutable";
-export default fromJS(error);
+
+export default error;
