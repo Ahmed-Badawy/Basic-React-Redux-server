@@ -5,10 +5,26 @@
   "scripts": {
     "start": "concurrently \"yarn run server\" \"yarn run webpack\" ",
     "server": "set NODE_PATH=./&& nodemon --exec babel-node server/app.js --ignore public/",
-    "build": "webpack -p",
     "webpack": "webpack -wd",
     "test": "set NODE_PATH=./&& jest --watch --verbose=true",
-    "verify-tests": "set NODE_PATH=./&& jest --coverage --verbose=true"
+    "verify-tests": "set NODE_PATH=./&& jest --coverage --verbose=true",
+    "build-webpack-minified-version": "webpack -p",
+    "build-node-from-babelnode": "babel server -d server-build --copy-files"
+  },
+  "babel": {
+    "presets": [
+      "react",
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ],
+      "es2015",
+      "stage-2"
+    ]
   },
   "dependencies": {
     "axios": "0.18.0",
@@ -16,6 +32,7 @@
     "debug": "^2.2.0",
     "ejs": "^2.3.3",
     "express": "~4.13.1",
+    "immutable": "3.8.2",
     "lodash.debounce": "^4.0.3",
     "lodash.pickby": "4.6.0",
     "moment": "2.22.2",

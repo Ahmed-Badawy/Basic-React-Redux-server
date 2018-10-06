@@ -5,6 +5,7 @@ npm-debug*
 package-lock.json
 yarn.lock
 .vscode
-
+server-build/
+bower_components/
 
 

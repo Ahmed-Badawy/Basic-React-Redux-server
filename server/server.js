@@ -4,10 +4,11 @@ var app = express();
 var port = 3000;
 
 app.get("/",(req,res)=>{
-    res.render("indedx");
+    res.render("index");
 })
 
 app.use(express.static(path.join(__dirname, '../public')));
+
 server.listen(port);
 server.on('listening', function() { console.log('listening on port ' + port); })
 server.on('error', function(error) {

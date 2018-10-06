@@ -1,10 +1,10 @@
 import express from "express";
-import reactServerRenderer from "./reactServerRenderer";
+import serverRenders from "./serverRenderer";
 
 const router = express.Router();
 
-router.get('/projects/AdvancedReactjs', async function(req, res, next) { 
-  const serverSideProvider = await reactServerRenderer();
+router.get('/learn/AdvancedReactjs', async function(req, res, next) { 
+  const serverSideProvider = await serverRenders.ReactServerRenderer();
   res.render('serverSideRendering', {
     title:"AdvancedReactjs",
     bundle:"AdvancedReactjs",
@@ -13,6 +13,19 @@ router.get('/projects/AdvancedReactjs', async function(req, res, next) {
     store: serverSideProvider.store
   }); 
 });
+
+router.get('/learn/AdvancedReduxNoServerRendering', function(req, res, next) { res.render('MainReactTemplate', {title:"AdvancedRedux",bundle:"AdvancedRedux"}); });
+router.get('/learn/AdvancedRedux', async function(req, res, next) { 
+  const serverSideProvider = await serverRenders.ReduxServerRenderer();
+  res.render('serverSideRendering', {
+    title:"AdvancedRedux",
+    bundle:"AdvancedRedux",
+    initialContent: serverSideProvider.markup,
+    initData: serverSideProvider.initData,
+    store: serverSideProvider.store
+  }); 
+});
+
 
 
 router.get('/projects/finder', function(req, res, next) { res.render('MainReactTemplate', {title:"The Finder",bundle:"Finder"}); });
