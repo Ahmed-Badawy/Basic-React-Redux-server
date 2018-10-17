@@ -63,7 +63,7 @@ function validate(){
 }
 
 function find(){
-    // return Person.find({age:{$gte:70,$lt:75}});
+    return Person.find({age:{$gte:70,$lt:75}});
     // return Person.where("age").gte(70).lt(75).where("isActive",false); //same as above but with the where statement
     // return Person.findOne({age:1});
     // return Person.findById("5b8581284e105e3994686441");

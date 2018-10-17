@@ -41,10 +41,6 @@ router.get('/projects/PhoneCreditCalc', function(req, res, next) { res.render('M
 router.get('/projects/CourseTimer', function(req, res, next) { res.render('MainReactTemplate', {title:"Course Timer",bundle:"CourseTimer"}); });
 
 
-
-
-
-
 router.get('/returnPromise', function(req, res, next) { 
   new Promise( (resolve,reject)=>{ setTimeout(_=>resolve("Hello World"),2000) })
     .then(output=>res.send(output))
@@ -60,17 +56,6 @@ router.get('/router', function(req, res, next) {
 router.get('/', function(req, res, next) {
   res.render('index', {});
 });
-
-
-
-import mongooseImp from "../mongooseImp";
-router.get('/testMongoose/:id', function(req, res, next) {
-  if(req.params.id=="populate_people") res.send(mongooseImp.populate_people());
-  if(req.params.id=="find") mongooseImp.find().then( result=>res.send(result) );
-  if(req.params.id=="update") mongooseImp.update().then( result=>res.send(result) );
-  if(req.params.id=="validate") mongooseImp.validate().then( result=>res.send(result) );
-});
-
 
 export default router;
 
