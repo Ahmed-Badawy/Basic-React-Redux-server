@@ -32,6 +32,8 @@
     "debug": "^2.2.0",
     "ejs": "^2.3.3",
     "express": "~4.13.1",
+    "express-graphql": "0.6.12",
+    "graphql": "14.0.2",
     "immutable": "3.8.2",
     "lodash.debounce": "^4.0.3",
     "lodash.pickby": "4.6.0",

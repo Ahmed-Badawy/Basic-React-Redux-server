@@ -3,6 +3,10 @@ import express from "express";
 var app = express();
 var port = 3000;
 
+
+import GraphQLHTTP from "express-graphql";
+
+
 app.get("/",(req,res)=>{
     res.render("index");
 })
