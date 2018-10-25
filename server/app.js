@@ -44,11 +44,11 @@ import old_schema from "./graphql/old_schema";
 app.use('/graphiql-editor',GraphQLHTTP({ schema: old_schema, graphiql:true, pretty:true }));
 app.use('/graphql',GraphQLHTTP({ schema: old_schema, pretty:true })); //now you can test it with this url: http://localhost:3000/graphql?query={counter,message}
 
-import new_schema from "./graphql/new_schema";
-app.use('/graphiql-editor-new',GraphQLHTTP({ schema: new_schema.schema,  rootValue: new_schema.root,  graphiql:true, pretty:true }));
-
 import schema_mongodb from "./graphql/schema_mongodb";
 app.use('/graphiql-editor-mongo',GraphQLHTTP({ schema: schema_mongodb, graphiql:true, pretty:true })); //now you can test it here: http://localhost:3000/graphiql-editor-mongo?query={people{fullName,age,isActive}}
+
+import new_schema from "./graphql/new_schema";
+app.use('/graphiql-editor-new',GraphQLHTTP({ schema: new_schema.schema,  rootValue: new_schema.root,  graphiql:true, pretty:true }));
 /*------------------------------------------------------------------------------*/
 
 
