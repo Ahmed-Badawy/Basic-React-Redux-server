@@ -26,7 +26,7 @@ router.get('/learn/AdvancedRedux', async function(req, res, next) {
   }); 
 });
 
-
+router.get('/learn/immutableRedux', function(req, res, next) { res.render('MainReactTemplate', {title:"ImmutableRedux",bundle:"ImmutableRedux"}); });
 
 router.get('/projects/finder', function(req, res, next) { res.render('MainReactTemplate', {title:"The Finder",bundle:"Finder"}); });
 router.get('/projects/FuelCalc', function(req, res, next) { res.render('MainReactTemplate', {title:"Fuel Calculator",bundle:"FuelCalc"}); });

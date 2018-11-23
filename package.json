@@ -7,7 +7,7 @@
     "server": "set NODE_PATH=./&& nodemon --exec babel-node server/app.js --ignore public/",
     "webpack": "webpack -wd",
     "test": "set NODE_PATH=./&& jest --watch --verbose=true",
-    "verify-tests": "set NODE_PATH=./&& jest --coverage --verbose=true",
+    "verify-tests": "set NODE_PATH=./&& jest --coverage --verbose=true --watch",
     "build-webpack-minified-version": "webpack -p",
     "build-node-from-babelnode": "babel server -d server-build --copy-files"
   },
