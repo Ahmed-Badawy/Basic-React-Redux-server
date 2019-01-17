@@ -13,14 +13,15 @@ var webpackConfig = {
 	entry: {
 		vendor: ["babel-polyfill","react","react-dom","prop-types","axios","lodash.debounce","lodash.pickby"], 
 		
-		// AdvancedReactjs: [`./react/${RFolders.t}/AdvancedReactjs/main.js`],
+		AdvancedReactjs: [`./react/${RFolders.t}/AdvancedReactjs/main.js`],
 		// RouterApp: [`./react/${RFolders.t}/RouterApp/main.js`],
 		// BasicRedux: [`./react/${RFolders.t}/BasicRedux/main.js`],
 		AdvancedRedux: [`./react/${RFolders.t}/AdvancedRedux/main.js`],
 		ImmutableRedux: [`./react/${RFolders.t}/ImmutableRedux/main.js`],
+		apolloImp: [`./react/${RFolders.t}/apolloImp/main.js`],
 
 		// FuelCalc: [`./react/${RFolders.f}/FuelCalc/main.js`],
-		// ConsumptionCalc: [`./react/${RFolders.f}/ConsumptionCalc/main.js`],
+		ConsumptionCalc: [`./react/${RFolders.f}/ConsumptionCalc/main.js`],
 		// MoneyCalc: [`./react/${RFolders.f}/MoneyCalc/main.js`],
 		// SocialId: [`./react/${RFolders.f}/SocialId/main.js`],
 		// PhoneCreditCalc: [`./react/${RFolders.f}/PhoneCreditCalc/main.js`],

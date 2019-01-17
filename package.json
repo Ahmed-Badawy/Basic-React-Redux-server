@@ -1,13 +1,13 @@
 {
-  "name": "pl_redux",
-  "version": "0.0.0",
+  "name": "testProject",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "concurrently \"yarn run server\" \"yarn run webpack\" ",
     "server": "set NODE_PATH=./&& nodemon --exec babel-node server/app.js --ignore public/",
     "webpack": "webpack -wd",
     "test": "set NODE_PATH=./&& jest --watch --verbose=true",
-    "verify-tests": "set NODE_PATH=./&& jest --coverage --verbose=true --watch",
+    "tests-coverage": "set NODE_PATH=./&& jest --coverage --config jest.config.json --watch",
     "build-webpack-minified-version": "webpack -p",
     "build-node-from-babelnode": "babel server -d server-build --copy-files"
   },
@@ -27,6 +27,7 @@
     ]
   },
   "dependencies": {
+    "apollo-boost": "0.1.22",
     "axios": "0.18.0",
     "babel-polyfill": "6.26.0",
     "debug": "^2.2.0",
@@ -41,6 +42,7 @@
     "mongoose": "5.2.9",
     "morgan": "^1.7.0",
     "react": "16.0.0",
+    "react-apollo": "2.3.2",
     "react-dom": "16.0.0",
     "react-router-dom": "4.3.1"
   },
@@ -57,8 +59,11 @@
     "concurrently": "^2.0.0",
     "cors": "2.8.4",
     "css-loader": "1.0.0",
+    
     "enzyme": "3.6.0",
     "enzyme-adapter-react-16": "1.5.0",
+    "enzyme-to-json": "3.3.5",
+
     "eslint": "^3.7.1",
     "eslint-plugin-react": "^6.4.0",
     "faker": "4.1.0",

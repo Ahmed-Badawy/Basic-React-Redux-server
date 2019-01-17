@@ -87,7 +87,7 @@ class MainComponent extends React.Component {
         for(let i=0; i<consumptionArray.length-1 ;i++){
             let item = consumptionArray[i];
             if(item.min==0){ accumulative = []; totalCost = 0 }
-            if(consumption>item.min && consumption<item.max){ 
+            if(consumption>item.min && consumption<=item.max){ 
                 let lastSlice = consumption - item.min;
                 new_obj = {...item,diff:lastSlice,cost:lastSlice*item.price/100};
                 accumulative.push(new_obj);

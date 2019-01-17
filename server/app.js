@@ -49,6 +49,7 @@ app.use('/graphiql-editor-mongo',GraphQLHTTP({ schema: schema_mongodb, graphiql:
 
 import new_schema from "./graphql/new_schema";
 app.use('/graphiql-editor-new',GraphQLHTTP({ schema: new_schema.schema,  rootValue: new_schema.root,  graphiql:true, pretty:true }));
+app.use('/graphql-new',GraphQLHTTP({ schema: new_schema.schema,  rootValue: new_schema.root,  pretty:true }));
 /*------------------------------------------------------------------------------*/
 
 

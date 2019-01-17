@@ -24,6 +24,7 @@ class Article extends PureComponent {
     }
 }
 
+// this is a static value called prototypes on the Articles Class.
 Article.propTypes= {
     article: PropTypes.shape({
         title: PropTypes.string.isRequired,

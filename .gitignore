@@ -4,6 +4,8 @@ public/js/build/
 npm-debug*
 package-lock.json
 yarn.lock
+yarn-error.log
+
 .vscode
 server-build/
 bower_components/

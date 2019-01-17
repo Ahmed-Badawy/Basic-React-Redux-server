@@ -14,6 +14,8 @@ router.get('/learn/AdvancedReactjs', async function(req, res, next) {
   }); 
 });
 
+
+
 router.get('/learn/AdvancedReduxNoServerRendering', function(req, res, next) { res.render('MainReactTemplate', {title:"AdvancedRedux",bundle:"AdvancedRedux"}); });
 router.get('/learn/AdvancedRedux', async function(req, res, next) { 
   const serverSideProvider = await serverRenders.ReduxServerRenderer();
@@ -26,14 +28,18 @@ router.get('/learn/AdvancedRedux', async function(req, res, next) {
   }); 
 });
 
+
+
+router.get('/learn/apolloImp', function(req, res, next) { res.render('MainReactTemplate', {title:"apolloImp",bundle:"apolloImp"}); });
+
 router.get('/learn/immutableRedux', function(req, res, next) { res.render('MainReactTemplate', {title:"ImmutableRedux",bundle:"ImmutableRedux"}); });
 
 router.get('/projects/finder', function(req, res, next) { res.render('MainReactTemplate', {title:"The Finder",bundle:"Finder"}); });
 router.get('/projects/FuelCalc', function(req, res, next) { res.render('MainReactTemplate', {title:"Fuel Calculator",bundle:"FuelCalc"}); });
 
-router.get('/projects/BasicRedux', function(req, res, next) { res.render('MainReactTemplate', {title:"BasicRedux",bundle:"BasicRedux"}); });
+router.get('/learn/BasicRedux', function(req, res, next) { res.render('MainReactTemplate', {title:"BasicRedux",bundle:"BasicRedux"}); });
 
-router.get('/projects/ConsumptionCalc', function(req, res, next) { res.render('MainReactTemplate', {title:"Electricity Consumption Calculator",bundle:"ElecCalc"}); });
+router.get('/projects/ConsumptionCalc', function(req, res, next) { res.render('MainReactTemplate', {title:"Electricity Consumption Calculator",bundle:"ConsumptionCalc"}); });
 router.get('/projects/MoneyCalc', function(req, res, next) { res.render('MainReactTemplate', {title:"Money Calculator",bundle:"MoneyCalc"}); });
 router.get('/projects/SocialId', function(req, res, next) { res.render('MainReactTemplate', {title:"Social Id Analyzer",bundle:"SocialId"}); });
 router.get('/projects/PhoneCreditCalc', function(req, res, next) { res.render('MainReactTemplate', {title:"Phone Credit Calculator",bundle:"PhoneCreditCalc"}); });

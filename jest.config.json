@@ -1,0 +1,12 @@
+{
+	"name": "testProject",
+	"verbose": true,
+	"coveragePathIgnorePatterns": [
+		"/node_modules/",
+		"testconfig.js",
+		"jest.config.json",
+		"package.json",
+		"package-lock.json"
+	]
+
+}
