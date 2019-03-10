@@ -8,6 +8,7 @@
     "webpack": "webpack -wd",
     "test": "set NODE_PATH=./&& jest --watch --verbose=true",
     "tests-coverage": "set NODE_PATH=./&& jest --coverage --config jest.config.json --watch",
+    "cypress": "cypress open",
     "build-webpack-minified-version": "webpack -p",
     "build-node-from-babelnode": "babel server -d server-build --copy-files"
   },
@@ -59,12 +60,16 @@
     "concurrently": "^2.0.0",
     "cors": "2.8.4",
     "css-loader": "1.0.0",
-    
+    "cypress": "3.1.4",
+    "cypress-match-screenshot": "1.1.0",
     "enzyme": "3.6.0",
     "enzyme-adapter-react-16": "1.5.0",
     "enzyme-to-json": "3.3.5",
-
     "eslint": "^3.7.1",
+    "eslint-config-airbnb": "17.1.0",
+    "eslint-config-prettier": "4.0.0",
+    "eslint-plugin-jsx-a11y": "6.2.1",
+    "eslint-plugin-prettier": "3.0.1",
     "eslint-plugin-react": "^6.4.0",
     "faker": "4.1.0",
     "jest": "23.6.0",

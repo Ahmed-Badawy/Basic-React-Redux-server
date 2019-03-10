@@ -22,5 +22,17 @@ router.get('/main/:id?', function(req, res, next) {
 
 
 
+let tasks = [
+	{ id:1 , name: "task 1" },
+	{ id:2 , name: "task 2" },
+	{ id:3 , name: "task 3" },
+	{ id:4 , name: "task 4" },
+]
+router.get("/tasks", function(req,res){
+	res.send({tasks});
+});
+
+
+
 
 export default router;
