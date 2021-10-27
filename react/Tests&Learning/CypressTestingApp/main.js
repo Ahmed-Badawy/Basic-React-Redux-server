@@ -8,28 +8,24 @@ import MainComponent from './MainComponent';
 import { applyMiddleware, createStore } from 'redux';
 import thunk from 'redux-thunk';
 
+
 //reducer
 var defaultState = {
-  field: 'tanta'
+    field: "tanta",
+    tasks: [{id:22,name:"task 22"}]
 };
 function mainReducer(state = defaultState, action) {
-  switch (action.type) {
-  case 'ActionOne':
-    return { ...state, field: action.data.field };
-  default:
-    return state;
-  }
+    switch (action.type) {
+        case ("ActionOne"): return { ...state, field: action.data.field, tasks: action.data.tasks }
+        default: return state;
+    }
 }
 //--------------------------------------
 
 //Store & middlewares
 var logger = createLogger({ collapsed: true });
-var store = createStore(mainReducer, applyMiddleware(thunk, logger));
+var store = createStore( mainReducer, applyMiddleware(thunk, logger) );
 //--------------------------------------
 
-ReactDOM.render(
-  <Provider store={store}>
-    <MainComponent />
-  </Provider>,
-  document.getElementById('container')
-);
+
+ReactDOM.render(<Provider store={store}><MainComponent /></Provider>, document.getElementById('container'));

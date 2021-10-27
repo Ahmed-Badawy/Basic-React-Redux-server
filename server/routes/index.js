@@ -29,10 +29,13 @@ router.get('/learn/AdvancedRedux', async function(req, res, next) {
 });
 
 
+router.get('/learn/cypress', function(req, res, next) { res.render('MainReactTemplate', {title:"CypressTestingApp",bundle:"CypressTestingApp"}); });
 
 router.get('/learn/apolloImp', function(req, res, next) { res.render('MainReactTemplate', {title:"apolloImp",bundle:"apolloImp"}); });
 
 router.get('/learn/immutableRedux', function(req, res, next) { res.render('MainReactTemplate', {title:"ImmutableRedux",bundle:"ImmutableRedux"}); });
+router.get('/learn/routerApp', function(req, res, next) { res.render('MainReactTemplate', {title:"RouterApp",bundle:"RouterApp"}); });
+router.get('/learn/routerAppWithRedux', function(req, res, next) { res.render('MainReactTemplate', {title:"RouterAppWithRedux",bundle:"RouterAppWithRedux"}); });
 
 router.get('/projects/finder', function(req, res, next) { res.render('MainReactTemplate', {title:"The Finder",bundle:"Finder"}); });
 router.get('/projects/FuelCalc', function(req, res, next) { res.render('MainReactTemplate', {title:"Fuel Calculator",bundle:"FuelCalc"}); });
@@ -45,6 +48,7 @@ router.get('/projects/SocialId', function(req, res, next) { res.render('MainReac
 router.get('/projects/PhoneCreditCalc', function(req, res, next) { res.render('MainReactTemplate', {title:"Phone Credit Calculator",bundle:"PhoneCreditCalc"}); });
 
 router.get('/projects/CourseTimer', function(req, res, next) { res.render('MainReactTemplate', {title:"Course Timer",bundle:"CourseTimer"}); });
+
 
 
 router.get('/returnPromise', function(req, res, next) { 
